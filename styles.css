@@ -64,7 +64,7 @@ nav .right a span {
     align-items: center;
     padding: 0 50px;
     margin: 50px 0;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     gap: 40px;
 }
 
@@ -117,10 +117,10 @@ nav .right a span {
     font-size: 35px;
 }
 
-.skills-section .text {
+/* .skills-section .text {
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 
 .skills-section .cells {
     display: flex;
@@ -137,7 +137,7 @@ nav .right a span {
     width: 200px;
     padding: 10px 20px;
     margin: 10px;
-    border: 1.5px solid #d3d3d3;
+    border: 2px solid #d3d3d3;
     border-radius: 5px;
 }
 
