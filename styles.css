@@ -200,4 +200,13 @@ nav .right a span {
     .hero-section .text h2 {
         font-size: 30px;
     }
+
+    /* SECTION 2: Skills */
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
 }
