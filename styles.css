@@ -165,7 +165,17 @@ nav .right a span {
     margin-bottom: 30px;
 }
 
-/* SECTION 4: Contact */
+/* SECTION 4: Certificats */
+.certificates-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.certificates-section h2 {
+    font-size: 35px;
+}
+
+/* SECTION 5: Contact */
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -236,7 +246,8 @@ nav .right a span {
         width: 300px;
     }
 
-    /* SECTION 4: Contact */
+    /* SECTION 5
+    : Contact */
     .contact-section .group {
         flex-direction: column;
     }
@@ -282,7 +293,7 @@ nav .right a span {
         font-size: 16px;
     }
 
-    /* SECTION 4: Contact */
+    /* SECTION 5: Contact */
     .contact-section {
         padding: 0 20px;
     }
