@@ -17,6 +17,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
@@ -189,6 +191,34 @@ nav .right a span {
     flex-direction: column;
 }
 
+.contact-section .group form input, 
+.contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+}
+
+
+
 @media (max-width: 850px) {
     /* SECTION 1: Hero */
     .hero-section .text h2 {
@@ -204,6 +234,11 @@ nav .right a span {
 
     .hero-section .headshot .img {
         width: 300px;
+    }
+
+    /* SECTION 4: Contact */
+    .contact-section .group {
+        flex-direction: column;
     }
 }
 
@@ -245,5 +280,10 @@ nav .right a span {
 
     .skills-section .cells .cell span {
         font-size: 16px;
+    }
+
+    /* SECTION 4: Contact */
+    .contact-section {
+        padding: 0 20px;
     }
 }
