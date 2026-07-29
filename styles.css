@@ -1,7 +1,8 @@
 :root {
-    --text-color: #1a1c20;
+    --text-color: white;
     --link-color: #4a76ee;
-    --background-color: #eeeff1;
+    --background-color: #363636;
+    --dark-color: #19191a;
 }
 
 * {
@@ -17,7 +18,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -30,20 +31,19 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
+h2 {
+    color: var(--text-color);
+}
 
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 150px;
     height: 80px;
-
-    /* position: sticky;
-    top: 0;
-    z-index: 1000; */
-    background-color: var(--background-color);
-    border-bottom: 2px solid #d3d3d3;
+    
+    background-color: var(--dark-color);
 }
 
 nav .left a {
@@ -87,7 +87,7 @@ nav .right a span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 150px;
     margin: 50px 0;
     margin-bottom: 70px;
     gap: 40px;
@@ -95,6 +95,7 @@ nav .right a span {
 
 .hero-section .text {
     flex: 5;
+    color: var(--text-color);
 }
 
 .hero-section .text h2 {
@@ -133,7 +134,7 @@ nav .right a span {
 
 /* SECTION 2: Skills */
 .skills-section {
-    padding: 0 50px;
+    padding: 0 150px;
     margin-bottom: 100px;
 }
 
@@ -179,7 +180,7 @@ nav .right a span {
 
 /* SECTION 3: Projects */
 .projects-section {
-    padding: 0 50px;
+    padding: 0 150px;
     margin-bottom: 100px;
 }
 
@@ -208,15 +209,17 @@ nav .right a span {
     transition: transform .25s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
-}
-
 .project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.03);
 }
 
 .project-card .overlay {
@@ -272,7 +275,7 @@ nav .right a span {
 
 /* SECTION 4: Certificats */
 .certificates-section {
-    padding: 0 50px;
+    padding: 0 150px;
     margin-bottom: 100px;
 }
 
@@ -282,7 +285,7 @@ nav .right a span {
 
 /* SECTION 5: Contact */
 .contact-section {
-    padding: 0 50px;
+    padding: 0 150px;
     margin-bottom: 100px;
 }
 
