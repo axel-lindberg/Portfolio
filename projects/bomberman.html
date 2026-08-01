@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <title>Bomberman — Axel Lindberg</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="left">
+            <a href="../index.html">Axel Lindberg</a>
+        </div>
+
+        <div class="right">
+            <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:axelahus@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <a href="../index.html#projects" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to projects</span>
+        </a>
+
+        <!-- HERO -->
+        <section class="project-hero">
+            <div class="eyebrow">Case Study</div>
+            <h1>Bomberman</h1>
+            <p class="tagline">
+                A Bomberman replica built in C for a DE10-Lite FPGA board, running on RISC-V.
+            </p>
+
+            <div class="tech-stack">
+                <span>C</span>
+                <span>CMake</span>
+                <span>RISC-V Assembly</span>
+            </div>
+
+            <div class="meta">
+                <div>
+                    Role
+                    <span>TODO: your role</span>
+                </div>
+                <div>
+                    Team
+                    <span>TODO: team size</span>
+                </div>
+                <div>
+                    Timeline
+                    <span>TODO: dates</span>
+                </div>
+            </div>
+
+            <div class="cover">
+                <img src="../images/Bomberman-temp.webp" alt="Bomberman running on DE10-Lite board">
+            </div>
+        </section>
+
+        <!-- CONTENT -->
+        <div class="project-content">
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>
+                    TODO: What is this project — a course project, personal project? What does the
+                    DE10-Lite board add to the constraints (memory, I/O, no OS)?
+                </p>
+            </section>
+
+            <section id="my-role">
+                <h2>My role</h2>
+                <p>
+                    TODO: What did you personally build — rendering, input handling, bomb/explosion logic,
+                    the build system?
+                </p>
+            </section>
+
+            <section id="challenge">
+                <h2>The challenge</h2>
+                <p>
+                    TODO: Low-level constraints are usually the interesting part here — memory-mapped I/O,
+                    interrupt handling, timing, driving the board's display/LEDs from bare-metal C.
+                </p>
+            </section>
+
+            <section id="approach">
+                <h2>Approach</h2>
+                <ul>
+                    <li>TODO: how the game loop / rendering was implemented</li>
+                    <li>TODO: how RISC-V assembly was used alongside C</li>
+                    <li>TODO: how CMake was set up for cross-compilation</li>
+                </ul>
+            </section>
+
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <!-- Add screenshots / board photos to images/bomberman/ and reference them here -->
+                    <!-- <img src="../images/bomberman/screenshot-1.webp" alt="Description"> -->
+                </div>
+            </section>
+
+            <section id="results">
+                <h2>Results & learnings</h2>
+                <p>
+                    TODO: What worked, what was tight on resources, what would you optimize next time?
+                </p>
+            </section>
+        </div>
+
+        <div class="next-project">
+            <span>Next project</span>
+            <a href="metroped.html">MetroPed &rarr;</a>
+        </div>
+
+        <!-- FOOTER NAVBAR -->
+        <nav>
+            <div class="center">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="mailto:axelahus@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>
