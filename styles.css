@@ -19,7 +19,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
 }
 
@@ -96,7 +96,7 @@ nav .right a span {
     align-items: center;
     padding: 0 150px;
     margin: 50px 0;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     gap: 40px;
 }
 
@@ -148,18 +148,13 @@ nav .right a span {
 /* SECTION 2: Skills */
 .skills-section {
     padding: 0 150px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .skills-section h2 {
     font-size: 35px;
     margin-bottom: 20px;
 }
-
-/* .skills-section .text {
-    text-align: center;
-    margin-bottom: 20px;
-} */
 
 .skills-section .cells {
     display: grid;
@@ -208,7 +203,7 @@ nav .right a span {
 /* SECTION 3: Projects */
 .projects-section {
     padding: 0 150px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .projects-section h2 {
