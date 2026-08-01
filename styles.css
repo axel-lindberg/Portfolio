@@ -234,7 +234,7 @@ nav .right a span {
 .project-card .card-award {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 2;
 
     display: inline-flex;
