@@ -148,6 +148,10 @@
     margin-bottom: 15px;
 }
 
+.project-content h3 {
+    color: var(--text-color);
+}
+
 .project-content p {
     color: var(--light-grey);
     font-size: 17px;
