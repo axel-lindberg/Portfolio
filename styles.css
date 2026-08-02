@@ -161,7 +161,7 @@ nav .right a span {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 20px;
     justify-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     
     background: rgba(255,255,255,.03);
