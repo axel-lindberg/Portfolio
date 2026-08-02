@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -45,11 +50,13 @@ h2 {
 /* NAVBAR */
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;
-    height: 80px;
-    
+    padding: 15px 150px;
+    min-height: 80px;
+    row-gap: 10px;
+
     background-color: var(--dark-color);
 }
 
@@ -385,10 +392,66 @@ nav .right a span {
 
 
 
+/* Large tablets / small laptops: ease off the 150px desktop gutters */
+@media (max-width: 1100px) {
+    nav {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .hero-section,
+    .skills-section,
+    .projects-section,
+    .certificates-section,
+    .contact-section {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
 @media (max-width: 850px) {
+    /* NAVBAR */
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     /* SECTION 1: Hero */
+    .hero-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .hero-section .text h2 {
         font-size: 35px;
+    }
+
+    .hero-section .headshot img {
+        width: 260px;
+    }
+
+    /* SECTION 2: Skills */
+    .skills-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* SECTION 3: Projects */
+    .projects-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* SECTION 4: Certificates */
+    .certificates-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* SECTION 5: Contact */
+    .contact-section {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -398,12 +461,15 @@ nav .right a span {
         flex-direction: column-reverse;
     }
 
-    .hero-section .headshot .img {
-        width: 300px;
+    .hero-section .headshot {
+        justify-content: center;
     }
 
-    /* SECTION 5
-    : Contact */
+    .hero-section .headshot img {
+        width: 220px;
+    }
+
+    /* SECTION 5: Contact */
     .contact-section .group {
         flex-direction: column;
     }
@@ -412,7 +478,8 @@ nav .right a span {
 @media (max-width: 600px){
     /* NAVBAR */
     nav {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     nav .right a {
@@ -433,7 +500,8 @@ nav .right a span {
     /* SECTION 1: Hero */
 
     .hero-section {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hero-section .text h2 {
@@ -442,15 +510,57 @@ nav .right a span {
 
     /* SECTION 2: Skills */
     .skills-section {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .skills-section .cells .cell span {
         font-size: 16px;
     }
 
+    /* SECTION 3: Projects */
+    .projects-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project-card {
+        height: 320px;
+    }
+
+    .project-info h3 {
+        font-size: 26px;
+    }
+
+    /* SECTION 4: Certificates */
+    .certificates-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     /* SECTION 5: Contact */
     .contact-section {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero-section,
+    .skills-section,
+    .projects-section,
+    .certificates-section,
+    .contact-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 26px;
     }
 }

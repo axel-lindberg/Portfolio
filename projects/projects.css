@@ -209,7 +209,29 @@
 /* ============================= */
 /* Responsive                    */
 /* ============================= */
+@media (max-width: 1100px) {
+    .back-link,
+    .project-hero,
+    .project-content,
+    .next-project {
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 850px) {
+    .back-link,
+    .project-hero,
+    .project-content,
+    .next-project {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .project-hero h1 {
         font-size: 36px;
     }
@@ -233,5 +255,32 @@
 
     .project-hero h1 {
         font-size: 30px;
+    }
+
+    .project-hero .tagline {
+        font-size: 17px;
+    }
+
+    .project-hero .meta {
+        gap: 18px;
+    }
+
+    .next-project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .back-link,
+    .project-hero,
+    .project-content,
+    .next-project {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .project-hero h1 {
+        font-size: 26px;
     }
 }
