@@ -25,5 +25,6 @@ This repository contains my personal portfolio website, showcasing my projects, 
 - Git & GitHub
 - Font Awesome
 - Google Fonts
+- Google Analytics
 
 ---
