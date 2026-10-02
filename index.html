@@ -14,246 +14,399 @@
     gtag('config', 'G-LT5BD7VWH6');
     </script>
 
+    <title>Axel Lindberg — Full-Stack Developer</title>
+    <meta name="description" content="Axel Lindberg is a Full-Stack Developer and M.Sc. Computer Science student at KTH in Stockholm, building practical AI and ML solutions for real-world problems.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Axel Lindberg — Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer and M.Sc. Computer Science student at KTH, building practical AI and ML solutions.">
+    <meta property="og:url" content="https://axel-lindberg.github.io/Portfolio/">
+    <meta property="og:image" content="https://axel-lindberg.github.io/Portfolio/images/hero-headshot.webp">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
-
-    <title>Axel Lindberg</title>
 </head>
 <body>
-    <!--NAVBAR-->
-    <nav>
-        <div class="left">
-            <a href="../index.html">Axel Lindberg</a>
-        </div>
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="container" aria-label="Main">
+            <a href="#hero" class="brand">Axel Lindberg<span>.</span></a>
 
-        <div class="right">
-            <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-            <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-            <a href="mailto:axelahus@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </div>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
 
-    <main>
-        <!--SECTION 1: Hero-->
-        <section id="hero" class="hero-section">
-            <div class="text">
-                <h2>Hi, I'm Axel</h2>
-
-                <div class="location">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <span>Stockholm, Sweden</span>
-                </div>
-
-                <p>I'm a Full-Stack Developer building practical AI and ML solutions for real-world problems. Currently pursuing an M.Sc. in Computer Science and Engineering at KTH Royal Institute of Technology.</p>
-
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-
-                    <a href="#projects">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span>Projects</span>
-                    </a>
-
-                    <!-- <a href="#certificates">
-                        <i class="fa-solid fa-award"></i>
-                        <span>Certificates</span>
-                    </a> -->
-
-                    <a href="resume/Axel_Lindberg_Resume.pdf" download="Axel_Lindberg_Resume.pdf">
-                        <i class="fa-regular fa-file"></i>
-                        <span>Resume</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- <div class="headshot">
-                <img src="images/hero-headshot.webp" alt="axel lindberg headshot">
-            </div> -->
-        </section>
-
-        <!--SECTION 2: Skills-->
-        <section id="skills" class="skills-section">
-            <h2>What I work with</h2>
-
-            <div class="marquee">
-                <ul class="cells">
-                    <li class="cell">
-                        <i class="fa-brands fa-python" aria-hidden="true"></i>
-                        <span>Python</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-openai" aria-hidden="true"></i>
-                        <span>OpenAI</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
-                        <span>Git</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-java" aria-hidden="true"></i>
-                        <span>Java</span>
-                    </li>
-                    <li class="cell">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z"/></svg>
-                        <span>C</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-postgresql" aria-hidden="true"></i>
-                        <span>PostgreSQL</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                        <span>HTML</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
-                        <span>CSS</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-js" aria-hidden="true"></i>
-                        <span>JavaScript</span>
-                    </li>
-                    <li class="cell">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.194 7.543v8.913c0 1.103.588 2.122 1.544 2.674l7.718 4.456a3.086 3.086 0 0 0 3.088 0l7.718-4.456a3.087 3.087 0 0 0 1.544-2.674V7.543a3.084 3.084 0 0 0-1.544-2.673L13.544.414a3.086 3.086 0 0 0-3.088 0L2.738 4.87a3.085 3.085 0 0 0-1.544 2.673Zm5.403 2.914v3.087a.77.77 0 0 0 .772.772.773.773 0 0 0 .772-.772.773.773 0 0 1 1.317-.546.775.775 0 0 1 .226.546 2.314 2.314 0 1 1-4.631 0v-3.087c0-.615.244-1.203.679-1.637a2.312 2.312 0 0 1 3.274 0c.434.434.678 1.023.678 1.637a.769.769 0 0 1-.226.545.767.767 0 0 1-1.091 0 .77.77 0 0 1-.226-.545.77.77 0 0 0-.772-.772.771.771 0 0 0-.772.772Zm12.35 3.087a.77.77 0 0 1-.772.772h-.772v.772a.773.773 0 0 1-1.544 0v-.772h-1.544v.772a.773.773 0 0 1-1.317.546.775.775 0 0 1-.226-.546v-.772H12a.771.771 0 1 1 0-1.544h.772v-1.543H12a.77.77 0 1 1 0-1.544h.772v-.772a.773.773 0 0 1 1.317-.546.775.775 0 0 1 .226.546v.772h1.544v-.772a.773.773 0 0 1 1.544 0v.772h.772a.772.772 0 0 1 0 1.544h-.772v1.543h.772a.776.776 0 0 1 .772.772Zm-3.088-2.315h-1.544v1.543h1.544v-1.543Z"/></svg>
-                        <span>C#</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-docker" aria-hidden="true"></i>
-                        <span>Docker</span>
-                    </li>
-                    <li class="cell">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/></svg>
-                        <span>FastAPI</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-unity" aria-hidden="true"></i>
-                        <span>Unity</span>
-                    </li>
-                    <li class="cell">
-                        <i class="fa-brands fa-claude" aria-hidden="true"></i>
-                        <span>Claude Code</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!--SECTION 3: Projects-->
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-
-            <div class="projects-grid">
-                <a href="projects/ai_calorie_tracker.html" class="project-card">
-                    <img src="images/ai-calorie-tracker.webp" alt="ai-calorie-tracker">
-
-                    <div class="overlay"></div>
-
-                    <div class="project-info">
-                        <h3>AI Calorie Tracker</h3>
-
-                        <div class="tech-stack">
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>PostgreSQL</span>
-                            <span>OpenAI API</span>
-                        </div>
-
-                        <p>
-                            Personal AI assistant for nutrition tracking.
-                        </p>
-                    </div>
+            <div class="nav-social">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-
-
-                <a href="projects/metroped.html" class="project-card">
-                    <img src="images/metroped.webp" alt="MetroPed">
-
-                    <div class="overlay"></div>
-
-                    <div class="project-info">
-                        <h3>MetroPed</h3>
-
-                        <div class="tech-stack">
-                            <span>C#</span>
-                            <span>Unity</span>
-                            <span>Scrum</span>
-                            <span>Agile</span>
-                        </div>
-
-                        <p>
-                            Improving realism in a metro VR simulation
-                        </p>
-                    </div>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
-
-                <a href="projects/bomberman.html" class="project-card">
-                    <img src="images/bomberman_image1.webp" alt="Bomberman">
-
-                    <!-- <div class="card-award">
-                        <i class="fa-solid fa-trophy"></i>
-                        <span>Best Project</span>
-                    </div> -->
-
-                    <div class="overlay"></div>
-
-                    <div class="project-info">
-                        <h3>Bomberman</h3>
-
-                        <div class="tech-stack">
-                            <span>C</span>
-                            <span>CMake</span>
-                            <span>RISC-V</span>
-                        </div>
-
-                        <p>
-                            Bomberman replica for a DE10-Lite board
-                        </p>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-
-        <!-- SECTION: Navbar bottom -->
-        <nav>
-            <div class="center">
-                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    <span>Github</span>
-                </a>
-                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-                <a href="mailto:axelahus@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Email</span>
+                <a href="mailto:axelahus@gmail.com" class="btn btn-primary" aria-label="Email me">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span>Contact</span>
                 </a>
             </div>
         </nav>
+    </header>
 
-        <!-- SECTION 4: Certificates
-        <section id="certificates" class="certificates-section">
-            <h2>Certificates</h2>
+    <main>
+        <!--SECTION 1: Hero-->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="text">
+                    <div class="eyebrow">Full-Stack Developer · M.Sc. Student at KTH</div>
+
+                    <h1>Hi, I'm <span>Axel</span></h1>
+
+                    <p class="lead">
+                        I'm a Full-Stack Developer building practical AI and ML solutions for real-world problems.
+                        Currently pursuing an M.Sc. in Computer Science and Engineering at KTH Royal Institute of Technology.
+                    </p>
+
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Stockholm, Sweden</span>
+                    </div>
+
+                    <div class="actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View my projects</span>
+                            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="headshot">
+                    <img src="images/hero-headshot.webp" alt="Portrait of Axel Lindberg" width="800" height="800">
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 2: About-->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow">About</div>
+                    <h2>Who I am</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm a <strong>Computer Science and Engineering student at KTH</strong> with a strong foundation in
+                            software development and systems programming.
+                        </p>
+                        <!-- <p>
+                            I like building things end to end, from <strong>low-level C and RISC-V Assembly</strong> on FPGA hardware
+                            to <strong>full-stack AI applications</strong> with Python, FastAPI and PostgreSQL.
+                        </p>
+                        <p>
+                            I've also led a six-person team as <strong>Scrum Master</strong>, delivering a client-validated MVP
+                            ahead of schedule in an industry collaboration with KTH.
+                        </p> -->
+
+                        <ul class="facts">
+                            <li>
+                                <span class="label">Based in</span>
+                                <span class="value">Stockholm, Sweden</span>
+                            </li>
+                            <li>
+                                <span class="label">Studying</span>
+                                <span class="value">M.Sc. CS &amp; Eng., KTH</span>
+                            </li>
+                            <li>
+                                <span class="label">Languages</span>
+                                <span class="value">Swedish, English</span>
+                            </li>
+                            <li>
+                                <span class="label">Award</span>
+                                <span class="value">Best Project, IS1500</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-card">
+                        <h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Education</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="when">Aug 2024 — May 2029</span>
+                                <h4>M.Sc. Computer Science and Engineering</h4>
+                                <span class="where">KTH Royal Institute of Technology</span>
+                            </li>
+                        </ul>
+
+                        <h3><i class="fa-solid fa-briefcase" aria-hidden="true"></i>Experience</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="when">Dec 2025 — Jun 2026</span>
+                                <h4>Scrum Master &amp; Developer</h4>
+                                <span class="where">MetroPed · KTH industry collaboration</span>
+                            </li>
+                            <li>
+                                <span class="when">May 2024 — Aug 2026</span>
+                                <h4>Production Operator (Blending & Bottling)</h4>
+                                <span class="where">The Absolut Company · Åhus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 3: Skills-->
+        <section id="skills" class="section section-alt skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow">Skills</div>
+                    <h2>What I work with</h2>
+                    <p>Languages, frameworks and tools I've used across my projects.</p>
+                </div>
+
+                <div class="marquee">
+                    <ul class="cells">
+                        <li class="cell">
+                            <i class="fa-brands fa-python" aria-hidden="true"></i>
+                            <span>Python</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-openai" aria-hidden="true"></i>
+                            <span>OpenAI</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                            <span>Git</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-java" aria-hidden="true"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="cell">
+                            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z"/></svg>
+                            <span>C</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-postgresql" aria-hidden="true"></i>
+                            <span>PostgreSQL</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                            <span>HTML</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                            <span>CSS</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-js" aria-hidden="true"></i>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="cell">
+                            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.194 7.543v8.913c0 1.103.588 2.122 1.544 2.674l7.718 4.456a3.086 3.086 0 0 0 3.088 0l7.718-4.456a3.087 3.087 0 0 0 1.544-2.674V7.543a3.084 3.084 0 0 0-1.544-2.673L13.544.414a3.086 3.086 0 0 0-3.088 0L2.738 4.87a3.085 3.085 0 0 0-1.544 2.673Zm5.403 2.914v3.087a.77.77 0 0 0 .772.772.773.773 0 0 0 .772-.772.773.773 0 0 1 1.317-.546.775.775 0 0 1 .226.546 2.314 2.314 0 1 1-4.631 0v-3.087c0-.615.244-1.203.679-1.637a2.312 2.312 0 0 1 3.274 0c.434.434.678 1.023.678 1.637a.769.769 0 0 1-.226.545.767.767 0 0 1-1.091 0 .77.77 0 0 1-.226-.545.77.77 0 0 0-.772-.772.771.771 0 0 0-.772.772Zm12.35 3.087a.77.77 0 0 1-.772.772h-.772v.772a.773.773 0 0 1-1.544 0v-.772h-1.544v.772a.773.773 0 0 1-1.317.546.775.775 0 0 1-.226-.546v-.772H12a.771.771 0 1 1 0-1.544h.772v-1.543H12a.77.77 0 1 1 0-1.544h.772v-.772a.773.773 0 0 1 1.317-.546.775.775 0 0 1 .226.546v.772h1.544v-.772a.773.773 0 0 1 1.544 0v.772h.772a.772.772 0 0 1 0 1.544h-.772v1.543h.772a.776.776 0 0 1 .772.772Zm-3.088-2.315h-1.544v1.543h1.544v-1.543Z"/></svg>
+                            <span>C#</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-docker" aria-hidden="true"></i>
+                            <span>Docker</span>
+                        </li>
+                        <li class="cell">
+                            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/></svg>
+                            <span>FastAPI</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-unity" aria-hidden="true"></i>
+                            <span>Unity</span>
+                        </li>
+                        <li class="cell">
+                            <i class="fa-brands fa-claude" aria-hidden="true"></i>
+                            <span>Claude Code</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3><i class="fa-solid fa-code" aria-hidden="true"></i>Languages</h3>
+                        <ul class="chips">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>HTML &amp; CSS</li>
+                            <li>RISC-V Assembly</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Frameworks &amp; Tools</h3>
+                        <ul class="chips">
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Unity</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>AI &amp; Ways of Working</h3>
+                        <ul class="chips">
+                            <li>OpenAI API</li>
+                            <li>Claude Code</li>
+                            <li>Agile / Scrum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 4: Projects-->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow">Work</div>
+                    <h2>Featured projects</h2>
+                    <p>A selection of things I've built, from AI-powered web apps to VR simulations and embedded games.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <a href="projects/ai_calorie_tracker.html" class="project-card featured">
+                        <img src="images/ai-calorie-tracker.webp" alt="Screenshot of the AI Calorie Tracker">
+
+                        <div class="overlay"></div>
+
+                        <div class="card-tag">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <span>Latest project</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h3>AI Calorie Tracker</h3>
+                            <p>Personal AI assistant for nutrition tracking.</p>
+
+                            <ul class="tech-stack">
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>PostgreSQL</li>
+                                <li>OpenAI API</li>
+                            </ul>
+
+                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="projects/metroped.html" class="project-card">
+                        <img src="images/metroped.webp" alt="Screenshot of the MetroPed VR metro station">
+
+                        <div class="overlay"></div>
+
+                        <div class="project-info">
+                            <h3>MetroPed</h3>
+                            <p>Improving realism in a metro VR simulation.</p>
+
+                            <ul class="tech-stack">
+                                <li>C#</li>
+                                <li>Unity</li>
+                                <li>Scrum</li>
+                                <li>Agile</li>
+                            </ul>
+
+                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="projects/bomberman.html" class="project-card">
+                        <img src="images/bomberman_image1.webp" alt="Bomberman running on the DE10-Lite board">
+
+                        <div class="overlay"></div>
+
+                        <div class="card-tag award">
+                            <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                            <span>Best Project</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h3>Bomberman</h3>
+                            <p>Bomberman replica for a DE10-Lite board.</p>
+
+                            <ul class="tech-stack">
+                                <li>C</li>
+                                <li>CMake</li>
+                                <li>RISC-V</li>
+                            </ul>
+
+                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Certificates
+        <section id="certificates" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow">Certificates</div>
+                    <h2>Certificates</h2>
+                </div>
+            </div>
         </section> -->
     </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-cta">
+            <h2>Let's work together</h2>
+            <p>Have a role, project or question in mind? I'd love to hear from you.</p>
+            <div class="actions">
+                <a href="mailto:axelahus@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span>Get in touch</span>
+                </a>
+                <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <span>&copy; 2026 Axel Lindberg</span>
+                <div class="footer-links">
+                    <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:axelahus@gmail.com" class="icon-link" aria-label="Email">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
     // Duplicate the skills list so the marquee can loop seamlessly
     document.querySelectorAll('.marquee').forEach(marquee => {
@@ -269,6 +422,18 @@
         viewport.append(track);
         marquee.classList.add('is-animated');
     });
+
+    // Highlight the nav link of the section currently in view
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            });
+        });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
     </script>
 </body>
 </html>
