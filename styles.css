@@ -163,31 +163,63 @@ nav .right a span {
     margin-bottom: 20px;
 }
 
-.skills-section .cells {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    justify-items: center;
+.skills-section .marquee {
     max-width: 1000px;
     margin: 0 auto;
-    
+    overflow: hidden;
+    padding: 30px 0;
+
     background: rgba(255,255,255,.03);
     border: 1px solid rgba(255,255,255,.06);
     border-radius: 20px;
-    padding: 30px;
+}
+
+/* Fade the skills in/out at the edges, inside the box */
+.skills-section .marquee-viewport {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.skills-section .marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.skills-section .marquee.is-animated .marquee-track {
+    animation: skills-scroll 40s linear infinite;
+}
+
+.skills-section .marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* Moves left to right: start shifted one list-width left, end at 0 */
+@keyframes skills-scroll {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+}
+
+.skills-section .cells {
+    display: flex;
+    flex-shrink: 0;
+    list-style: none;
 }
 
 .skills-section .cells .cell {
-    width: 100px;
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-shrink: 0;
+    padding: 0 30px;
+    white-space: nowrap;
 }
 
 .skills-section .cells .cell i,
-.skills-section .cells .cell img {
+.skills-section .cells .cell .icon {
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,13 +230,33 @@ nav .right a span {
     color: white;
 }
 
-.skills-section .cells .cell img {
-    object-fit: contain;
-}
-
 .skills-section .cells .cell span {
     font-size: 18px;
     color: var(--text-color);
+}
+
+/* Respect users who prefer less motion: show a static, wrapping list */
+@media (prefers-reduced-motion: reduce) {
+    .skills-section .marquee-viewport {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .skills-section .marquee.is-animated .marquee-track {
+        animation: none;
+        width: auto;
+    }
+
+    .skills-section .cells {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        flex-shrink: 1;
+    }
+
+    .skills-section .cells[aria-hidden="true"] {
+        display: none;
+    }
 }
 
 /* SECTION 3: Projects */
@@ -519,6 +571,29 @@ nav .right a span {
     .skills-section {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .skills-section .marquee {
+        padding: 20px 0;
+    }
+
+    .skills-section .marquee.is-animated .marquee-track {
+        animation-duration: 30s;
+    }
+
+    .skills-section .cells .cell {
+        padding: 0 18px;
+        gap: 8px;
+    }
+
+    .skills-section .cells .cell i,
+    .skills-section .cells .cell .icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .skills-section .cells .cell i {
+        font-size: 26px;
     }
 
     .skills-section .cells .cell span {
