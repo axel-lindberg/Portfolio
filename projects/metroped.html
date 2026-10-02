@@ -4,43 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LT5BD7VWH6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LT5BD7VWH6');
+    </script>
+
+    <title>MetroPed — Axel Lindberg</title>
+    <meta name="description" content="MetroPed: improving realism in a VR simulation of a Stockholm metro station, built with a Scrum team in collaboration with ESAL at KTH.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="MetroPed — Axel Lindberg">
+    <meta property="og:description" content="Improving realism in a metro station VR simulation, built with a Scrum team in collaboration with ESAL at KTH.">
+    <meta property="og:url" content="https://axel-lindberg.github.io/Portfolio/projects/metroped.html">
+    <meta property="og:image" content="https://axel-lindberg.github.io/Portfolio/images/metroped.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="projects.css">
-
-    <title>MetroPed — Axel Lindberg</title>
 </head>
-<body>
-    <!--NAVBAR-->
-    <nav>
-        <div class="left">
-            <a href="../index.html">Axel Lindberg</a>
-        </div>
+<body class="project-page">
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="container" aria-label="Main">
+            <a href="../index.html" class="brand">Axel Lindberg<span>.</span></a>
 
-        <div class="right">
-            <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-            <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-            <a href="mailto:axelahus@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </div>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
 
-    <main>
+            <div class="nav-social">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:axelahus@gmail.com" class="btn btn-primary" aria-label="Email me">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
         <a href="../index.html#projects" class="back-link">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
             <span>Back to projects</span>
         </a>
 
@@ -53,46 +78,44 @@
                 under an agile workflow.
             </p>
 
-            <div class="tech-stack">
-                <span>C#</span>
-                <span>Unity</span>
-                <span>Scrum</span>
-                <span>Agile</span>
+            <ul class="tech-stack">
+                <li>C#</li>
+                <li>Unity</li>
+                <li>Scrum</li>
+                <li>Agile</li>
+            </ul>
+
+            <div class="project-actions">
+                <a href="../resume/MetroPed_Report.pdf" download="MetroPed_Report.pdf" id="report" class="btn btn-primary">
+                    <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+                    <span>Download full report</span>
+                </a>
+
+                <a href="https://github.com/CO22MO/Crowd-Simulator-and-Tbana-Reconstruction-Fork" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>View on GitHub</span>
+                </a>
             </div>
-
-            <a href="../resume/MetroPed_Report.pdf" download="MetroPed_Report.pdf" class="report-link">
-                <i class="fa-regular fa-file-pdf"></i>
-                <span>Download full report</span>
-            </a>
-
-            <a href="https://github.com/CO22MO/Crowd-Simulator-and-Tbana-Reconstruction-Fork" class="report-link">
-                <i class="fa-brands fa-github"></i>
-                <span>MetroPed Github</span>
-            </a>
 
             <div class="meta">
                 <div>
                     Role
-                    <span>Scrum Master & Developer</span>
+                    <span>Scrum Master &amp; Developer</span>
                 </div>
                 <div>
                     Team
-                    <span>6</span>
+                    <span>6 developers</span>
                 </div>
                 <div>
                     Timeline
-                    <span>Dec 2025 - Jun 2026</span>
+                    <span>Dec 2025 – Jun 2026</span>
                 </div>
             </div>
 
             <div class="cover">
-                <!-- <img src="../images/metroped.webp" alt="MetroPed VR simulation screenshot"> -->
                 <iframe
-                    width="100%"
-                    height="100%"
                     src="https://www.youtube.com/embed/pjyfL-QzsRc"
                     title="MetroPed demo video"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -103,8 +126,27 @@
         <div class="project-content">
             <section id="overview">
                 <h2>Overview</h2>
+
+                <div class="highlights">
+                    <div class="highlight">
+                        <i class="fa-solid fa-vr-cardboard" aria-hidden="true"></i>
+                        <h3>Immersive VR</h3>
+                        <p>A virtual reality simulation of a Stockholm metro station.</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-flask" aria-hidden="true"></i>
+                        <h3>Research tool</h3>
+                        <p>Supports ESAL's research into perceived safety and behaviour.</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                        <h3>More realism</h3>
+                        <p>Better lighting, assets, spatial audio and crowd rendering.</p>
+                    </div>
+                </div>
+
                 <p>
-                    MetroPed is a virtual reality simulation of Stockholm's metro system developed in collaboration with ESAL at KTH Royal Institute of Technology. 
+                    MetroPed is a virtual reality simulation of Stockholm's metro system developed in collaboration with ESAL at KTH Royal Institute of Technology.
                     The project supports research into how people perceive safety and behave in public transport environments by creating an immersive VR simulation of a metro station.
                 </p>
 
@@ -112,63 +154,102 @@
                     The project focused on increasing the realism and immersion of the simulation by improving visual fidelity, lighting, environmental assets, spatial audio, and crowd rendering.
                 </p>
 
-                <a href="../resume/MetroPed_Report.pdf" download="MetroPed_Report.pdf" class="report-link">
-                <i class="fa-regular fa-file-pdf"></i>
-                <span>READ MORE</span>
-            </a>
+                <a href="#report" class="report-callout">
+                    <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+                    <span class="text">
+                        <strong>Want the full details?</strong>
+                        <span>The complete project report goes deeper into everything on this page.</span>
+                    </span>
+                    <span class="go">Go to full report <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></span>
+                </a>
             </section>
 
             <section id="my-role">
                 <h2>My role</h2>
-                <h3>Project Management</h3>
-                <p>
-                    Led a team of 6 developers using Agile methodology and Scrum to deliver a client-validated MVP ahead of schedule while managing sprints and project risks.
-                </p>
 
-                <h3>Impostor Rendering</h3>
-                <p>
-                    Developed a custom Impostor rendering pipeline in Unity and C# to optimize the rendering of crowd characters, significantly improving performance while maintaining visual quality and enabling larger, more realistic crowds in the simulation.
-                </p>
+                <div class="role-grid">
+                    <div class="role-card">
+                        <h3><i class="fa-solid fa-people-group" aria-hidden="true"></i>Project Management</h3>
+                        <ul>
+                            <li>Led a team of <strong>6 developers</strong> as Scrum Master</li>
+                            <li>Delivered a <strong>client-validated MVP ahead of schedule</strong></li>
+                            <li>Managed sprints and project risks using Agile and Scrum</li>
+                        </ul>
+                    </div>
 
-                <h3>Git & Documentation</h3>
-                <p>
-                    Designed a Git workflow and maintained comprehensive documentation to ensure scalability and a seamless stakeholder handover.
-                </p>
+                    <div class="role-card">
+                        <h3><i class="fa-solid fa-cubes" aria-hidden="true"></i>Impostor Rendering</h3>
+                        <ul>
+                            <li>Built a <strong>custom impostor rendering pipeline</strong> in Unity and C#</li>
+                            <li>Optimized crowd rendering, <strong>significantly improving performance</strong> while keeping visual quality</li>
+                            <li>Enabled <strong>larger, more realistic crowds</strong> in the simulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h3><i class="fa-solid fa-code-branch" aria-hidden="true"></i>Git &amp; Documentation</h3>
+                        <ul>
+                            <li>Designed the team's <strong>Git workflow</strong></li>
+                            <li>Maintained <strong>comprehensive documentation</strong> to keep the project scalable</li>
+                            <li>Ensured a <strong>seamless stakeholder handover</strong></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section id="gallery">
                 <h2>Gallery</h2>
                 <div class="gallery">
-                    <!-- Add screenshots to images/metroped/ and reference them here -->
-                    <!-- <img src="../images/metroped/screenshot-1.webp" alt="Description"> -->
-                     <img src="../images/metroped.webp" alt="MetroPed screenshot">
-                     <img src="../images/metroped_screenshot1.webp" alt="MetroPed screenshot">
+                    <img src="../images/metroped.webp" alt="MetroPed metro station in VR">
+                    <img src="../images/metroped_screenshot1.webp" alt="MetroPed simulation screenshot">
                 </div>
             </section>
         </div>
 
         <div class="next-project">
-            <span>Next project</span>
-            <a href="bomberman.html">Bomberman &rarr;</a>
+            <a href="bomberman.html">
+                <span>
+                    <span class="label">Next project</span>
+                    <span class="title">Bomberman</span>
+                </span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </div>
+    </main>
 
-        <!-- FOOTER NAVBAR -->
-        <nav>
-            <div class="center">
-                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    <span>Github</span>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-cta">
+            <h2>Let's work together</h2>
+            <p>Have a role, project or question in mind? I'd love to hear from you.</p>
+            <div class="actions">
+                <a href="mailto:axelahus@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span>Get in touch</span>
                 </a>
-                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-                <a href="mailto:axelahus@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Email</span>
+                <a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                    <span>Resume</span>
                 </a>
             </div>
-        </nav>
-    </main>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <span>&copy; 2026 Axel Lindberg</span>
+                <div class="footer-links">
+                    <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:axelahus@gmail.com" class="icon-link" aria-label="Email">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
