@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="projects.css">
 
-    <title>Bomberman — Axel Lindberg</title>
+    <title>AI Calorie Tracker — Axel Lindberg</title>
 </head>
 <body>
     <!--NAVBAR-->
@@ -46,51 +46,47 @@
 
         <!-- HERO -->
         <section class="project-hero">
-            <div class="eyebrow">Group Project</div>
-
-            <div class="award-badge">
-                <i class="fa-solid fa-trophy"></i>
-                <span>Best Project — IS1500 Computer Organization and Components, KTH</span>
-            </div>
-
-            <h1>Bomberman</h1>
+            <div class="eyebrow">Personal Project</div>
+            <h1>AI Calorie Tracker</h1>
             <p class="tagline">
-                A Bomberman replica built in C for a DE10-Lite FPGA board, running on RISC-V.
+                An AI-powered nutrition tracker that turns natural-language meal descriptions
+                into accurate calorie and macro data from the USDA FoodData Central database.
             </p>
 
             <div class="tech-stack">
-                <span>C</span>
-                <span>CMake</span>
-                <span>RISC-V</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>OpenAI API</span>
+                <span>Docker</span>
+                <span>JavaScript</span>
             </div>
 
-            <a href="https://github.com/YayL/Bomberman" class="report-link">
+            <a href="https://github.com/axel-lindberg/AI-Calorie-Tracker" class="report-link">
                 <i class="fa-brands fa-github"></i>
-                <span>Bomberman Github</span>
+                <span>AI Calorie Tracker Github</span>
             </a>
 
             <div class="meta">
                 <div>
                     Role
-                    <span>Developer</span>
+                    <span>Full-Stack Developer</span>
                 </div>
                 <div>
                     Team
-                    <span>2</span>
+                    <span>Solo</span>
                 </div>
                 <div>
                     Timeline
-                    <span>Nov 2025 - Dec 2025</span>
-                </div>
-
-                <div>
-                    Award
-                    <span>Best Project, IS1500 KTH</span>
+                    <span>Apr 2026 - Oct 2026</span>
                 </div>
             </div>
 
             <div class="cover">
-                <img src="../images/bomberman_image1.webp" alt="Bomberman running on DE10-Lite board">
+                <video controls muted playsinline preload="metadata" poster="../images/ai-calorie-tracker.webp">
+                    <source src="../videos/AI-Calorie-Tracker-Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
 
@@ -99,47 +95,49 @@
             <section id="overview">
                 <h2>Overview</h2>
                 <p>
-                    This project is a recreation of the classic Bomberman game developed as part of the IS1500 Computer Organization and Components course. 
-                    It is built for the DE10-Lite FPGA board using a 32-bit RISC-V architecture, the project demonstrates low-level programming and computer architecture concepts through a fully playable embedded game.
+                    AI Calorie Tracker is a full-stack nutrition tracking system that removes the tedious part of logging food.
+                    Instead of searching databases and entering portions by hand, meals are described in plain language, typed or dictated by voice,
+                    such as "two eggs and a slice of toast", and the system takes care of the rest.
                 </p>
                 <p>
-                    The project was implemented using a combination of C and RISC-V Assembly, requiring direct interaction with hardware components, memory, and peripherals to create responsive gameplay on resource-constrained hardware.
-                </p>
-                <p>
-                    The project was awarded "Best Project" in the course, highlighting its technical quality, implementation, and overall execution.
+                    Each description runs through a pipeline that parses it into individual food items with quantities and units, matches every item
+                    against the USDA FoodData Central database, converts the portions to grams and scales the nutrient values accordingly.
+                    Meals are stored in PostgreSQL, and the frontend shows the day's log together with total calories and macros.
                 </p>
             </section>
 
             <section id="my-role">
                 <h2>My role</h2>
-                <h3>Low-Level Programming</h3>
+                <h3>AI Parsing & Food Matching</h3>
                 <p>
-                    Programmed core game systems using C and Assembly on a 32-bit RISC-V architecture.
+                    Used the OpenAI API with Pydantic structured outputs to split free text into food items with quantities and units.
+                    USDA search results are pre-filtered with RapidFuzz before an LLM picks the candidate that is actually the same food, or rejects them all,
+                    keeping the nutrition data grounded in a trusted source rather than model guesses.
                 </p>
 
-                <h3>Game Systems</h3>
+                <h3>Nutrition Calculation</h3>
                 <p>
-                    Developed gameplay logic, including player movement, bomb placement, explosions, collision detection, and game state management.
+                    Built the gram conversion logic: weight units are converted directly, volume units go through an estimated density,
+                    and anything else falls back to an LLM estimate. Per-100 g nutrient values are then scaled to the actual portion, with the core logic covered by unit tests.
                 </p>
 
-                <h3>Hardware Integration</h3>
+                <h3>Backend & Database</h3>
                 <p>
-                    Interfaced directly with FPGA hardware, memory-mapped I/O, and peripherals to deliver responsive real-time gameplay.
+                    Designed a REST API in FastAPI for logging and deleting meals and retrieving the day's log and totals,
+                    backed by a PostgreSQL database running in Docker.
+                </p>
+
+                <h3>Frontend</h3>
+                <p>
+                    Built a lightweight frontend in vanilla JavaScript and Vite, including voice input through the browser's Web Speech API
+                    so meals can be dictated instead of typed.
                 </p>
             </section>
-
-            <!-- <section id="gallery">
-                <h2>Gallery</h2>
-                <div class="gallery"> -->
-                    <!-- Add screenshots / board photos to images/bomberman/ and reference them here -->
-                    <!-- <img src="../images/bomberman/screenshot-1.webp" alt="Description"> -->
-                <!-- </div>
-            </section> -->
         </div>
 
         <div class="next-project">
             <span>Next project</span>
-            <a href="ai_calorie_tracker.html">AI Calorie Tracker &rarr;</a>
+            <a href="metroped.html">MetroPed &rarr;</a>
         </div>
 
         <!-- FOOTER NAVBAR -->
