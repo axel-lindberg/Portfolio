@@ -122,7 +122,8 @@
     overflow: hidden;
 }
 
-.project-hero .cover img {
+.project-hero .cover img,
+.project-hero .cover video {
     width: 100%;
     display: block;
 }
