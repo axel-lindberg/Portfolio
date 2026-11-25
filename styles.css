@@ -483,10 +483,10 @@ h2 {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: var(--r-media);
+  height: auto;
   background: #000;
-  object-fit: cover;
+  object-fit: contain;
 }
-.media-frame video { object-fit: contain; }
 
 .media-caption {
   margin-top: 14px;
@@ -577,6 +577,8 @@ h2 {
 
 /* Gallery — thumbnail strip + large viewer (driven by js/gallery.js) */
 .gallery { padding-top: 120px; }
+/* Gallery in place of the hero video, on projects without one */
+.facts + .gallery { padding-top: 0; }
 
 .gallery-head {
   display: flex;
