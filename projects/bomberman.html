@@ -23,212 +23,147 @@
     <meta property="og:url" content="https://axel-lindberg.github.io/Portfolio/projects/bomberman.html">
     <meta property="og:image" content="https://axel-lindberg.github.io/Portfolio/images/bomberman_image1.webp">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#000000">
 
     <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="projects.css">
 </head>
-<body class="project-page">
-    <!-- HEADER -->
-    <header class="site-header">
-        <nav class="container" aria-label="Main">
-            <a href="../index.html" class="brand">Axel Lindberg<span>.</span></a>
-
-            <ul class="nav-links">
-                <li><a href="../index.html#skills">Skills</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
+<body>
+    <header class="container">
+        <nav class="site-nav" aria-label="Main">
+            <a href="../index.html#projects" class="back-link">
+                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
+                <span>All projects</span>
+            </a>
+            <ul class="pill-nav">
+                <li><a href="../index.html#projects" class="is-active">Projects</a></li>
                 <li><a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <div class="nav-social">
-                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary" aria-label="Email me">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Contact</span>
-                </a>
-            </div>
         </nav>
     </header>
 
     <main class="container">
-        <a href="../index.html#projects" class="back-link">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            <span>Back to projects</span>
-        </a>
-
-        <!-- HERO -->
-        <section class="project-hero">
-            <div class="eyebrow">Group Project</div>
-
-            <div class="award-badge">
-                <i class="fa-solid fa-trophy" aria-hidden="true"></i>
-                <span>Best Project — IS1500 Computer Organization and Components, KTH</span>
+        <header class="project-header">
+            <div class="label-row start">
+                <span class="label">Embedded systems · Group project</span>
+                <span class="badge">Best project · IS1500, KTH</span>
             </div>
-
             <h1>Bomberman</h1>
-            <p class="tagline">
+            <p class="project-intro">
                 A Bomberman replica built in C for a DE10-Lite FPGA board, running on RISC-V.
+                It won Best Project in IS1500 Computer Organization and Components at KTH.
             </p>
-
-            <ul class="tech-stack">
-                <li>C</li>
-                <li>RISC-V</li>
-            </ul>
-
-            <div class="project-actions">
-                <a href="https://github.com/axel-lindberg/Bomberman" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    <span>View on GitHub</span>
-                </a>
-            </div>
-
-            <div class="meta">
-                <div>
-                    Role
-                    <span>Developer</span>
-                </div>
-                <div>
-                    Team
-                    <span>2 developers</span>
-                </div>
-                <div>
-                    Timeline
-                    <span>Nov 2025 – Dec 2025</span>
+            <div class="header-row">
+                <ul class="tags tags-lg" aria-label="Technologies">
+                    <li>C</li>
+                    <li>RISC-V</li>
+                    <li>Assembly</li>
+                </ul>
+                <div class="header-actions">
+                    <a href="https://github.com/axel-lindberg/Bomberman" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span>View on GitHub</span>
+                        <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                    </a>
                 </div>
             </div>
+        </header>
 
-            <div class="cover">
-                <img src="../images/bomberman_image1.webp" alt="Bomberman running on the DE10-Lite board">
+        <dl class="facts">
+            <div><dt>Role</dt><dd>Developer</dd></div>
+            <div><dt>Team</dt><dd>2 developers</dd></div>
+            <div><dt>Timeline</dt><dd>Nov 2025 – Dec 2025</dd></div>
+        </dl>
+
+        <figure class="media-frame">
+            <img src="../images/bomberman_image1.webp" alt="Bomberman running on the DE10-Lite board" width="1600" height="900">
+        </figure>
+
+        <section class="split" aria-labelledby="overview-title">
+            <h2 id="overview-title">Overview</h2>
+            <div class="split-body">
+                <p class="lead">The classic Bomberman, rebuilt from the ground up for an FPGA board — no operating system, just C, RISC-V Assembly and the hardware.</p>
+                <p class="body-text">Made for the IS1500 Computer Organization and Components course at KTH. Built for the DE10-Lite board with a 32-bit RISC-V processor, the game interacts directly with memory and peripherals to deliver responsive, real-time gameplay on very constrained hardware.</p>
             </div>
         </section>
 
-        <!-- CONTENT -->
-        <div class="project-content">
-            <section id="overview">
-                <h2>Overview</h2>
-
-                <div class="highlights">
-                    <div class="highlight">
-                        <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-                        <h3>Hardware</h3>
-                        <p>Runs on a DE10-Lite FPGA board with a 32-bit RISC-V processor.</p>
-                    </div>
-                    <div class="highlight">
-                        <i class="fa-solid fa-code" aria-hidden="true"></i>
-                        <h3>C + Assembly</h3>
-                        <p>Direct control of memory and peripherals, no operating system.</p>
-                    </div>
-                    <div class="highlight">
-                        <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
-                        <h3>Fully playable</h3>
-                        <p>Responsive real-time gameplay on resource-constrained hardware.</p>
-                    </div>
-                </div>
-
-                <p>
-                    This project is a recreation of the classic Bomberman game developed as part of the IS1500 Computer Organization and Components course.
-                    Built for the DE10-Lite FPGA board using a 32-bit RISC-V architecture, it demonstrates low-level programming and computer architecture concepts through a fully playable embedded game.
-                </p>
-                <p>
-                    The project was implemented using a combination of C and RISC-V Assembly, requiring direct interaction with hardware components, memory, and peripherals to create responsive gameplay on resource-constrained hardware.
-                </p>
-            </section>
-
-            <section id="my-role">
-                <h2>My role</h2>
-
-                <div class="role-grid">
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-microchip" aria-hidden="true"></i>Low-Level Programming</h3>
-                        <ul>
-                            <li>Programmed core game systems in <strong>C and Assembly</strong></li>
-                            <li>Targeted a <strong>32-bit RISC-V</strong> architecture</li>
-                        </ul>
-                    </div>
-
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-gamepad" aria-hidden="true"></i>Game Systems</h3>
-                        <ul>
-                            <li><strong>Player movement</strong> and bomb placement</li>
-                            <li>Explosions and <strong>collision detection</strong></li>
-                            <li><strong>Game state management</strong></li>
-                        </ul>
-                    </div>
-
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-plug" aria-hidden="true"></i>Hardware Integration</h3>
-                        <ul>
-                            <li>Interfaced directly with FPGA hardware, <strong>memory-mapped I/O</strong> and peripherals</li>
-                            <li>Delivered <strong>responsive real-time gameplay</strong></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- <section id="gallery">
-                <h2>Gallery</h2>
-                <div class="gallery"> -->
-                    <!-- Add screenshots / board photos to images/bomberman/ and reference them here -->
-                    <!-- <img src="../images/bomberman/screenshot-1.webp" alt="Description"> -->
-                <!-- </div>
-            </section> -->
-        </div>
-
-        <div class="next-project">
-            <a href="tape31.html">
-                <span>
-                    <span class="label">Next project</span>
-                    <span class="title">Tape 31</span>
+        <section class="features" aria-label="Highlights">
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="0.5"/><path d="M9.5 2.5V6M14.5 2.5V6M9.5 18v3.5M14.5 18v3.5M2.5 9.5H6M2.5 14.5H6M18 9.5h3.5M18 14.5h3.5"/></svg>
                 </span>
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <h3>Hardware</h3>
+                <p>Runs on a DE10-Lite FPGA board with a 32-bit RISC-V processor.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"/></svg>
+                </span>
+                <h3>C + Assembly</h3>
+                <p>Direct control of memory and peripherals, no operating system.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="11" rx="5"/><path d="M7 12.5h4M9 10.5v4M15.5 11.5h.01M17.5 13.5h.01"/></svg>
+                </span>
+                <h3>Fully playable</h3>
+                <p>Responsive real-time gameplay on resource-constrained hardware.</p>
+            </article>
+        </section>
+
+        <section class="split" aria-labelledby="role-title">
+            <h2 id="role-title">My role</h2>
+            <div class="stack">
+                <div>
+                    <h3>Low-level programming</h3>
+                    <p>Programmed the core game systems in C and Assembly, targeting a 32-bit RISC-V architecture.</p>
+                </div>
+                <div>
+                    <h3>Game systems</h3>
+                    <p>Implemented player movement, bomb placement, explosions, collision detection and game state management.</p>
+                </div>
+                <div>
+                    <h3>Hardware integration</h3>
+                    <p>Interfaced directly with the FPGA hardware through memory-mapped I/O and peripherals to deliver responsive, real-time gameplay.</p>
+                </div>
+            </div>
+        </section>
+
+        <nav class="next" aria-label="Next project">
+            <a href="tape31.html" class="next-card">
+                <span class="next-thumb"><img src="../images/tape31.webp" alt="" width="1280" height="800" loading="lazy"></span>
+                <span class="next-text">
+                    <span class="label">Next project</span>
+                    <span class="next-title">Tape 31</span>
+                </span>
+                <span class="next-arrow" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                </span>
             </a>
-        </div>
+        </nav>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="contact-text">
+                <h2 id="contact-title">Get in touch</h2>
+                <a href="mailto:axelahus@gmail.com" class="contact-email">axelahus@gmail.com</a>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub</a>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">LinkedIn</a>
+                <a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-small">Resume</a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container footer-cta">
-            <h2>Let's work together</h2>
-            <p>Have a role, project or question in mind? I'd love to hear from you.</p>
-            <div class="actions">
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Get in touch</span>
-                </a>
-                <a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-                    <span>Resume</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <span>&copy; 2026 Axel Lindberg</span>
-                <div class="footer-links">
-                    <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:axelahus@gmail.com" class="icon-link" aria-label="Email">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="container">
+        <div class="site-footer">
+            <span>&copy; 2026 Axel Lindberg</span>
+            <span>Stockholm, Sweden</span>
         </div>
     </footer>
 </body>

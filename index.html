@@ -23,341 +23,170 @@
     <meta property="og:url" content="https://axel-lindberg.github.io/Portfolio/">
     <meta property="og:image" content="https://axel-lindberg.github.io/Portfolio/images/ai-calorie-tracker.webp">
     <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#000000">
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="site-header">
-        <nav class="container" aria-label="Main">
-            <a href="#hero" class="brand">Axel Lindberg<span>.</span></a>
-
-            <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+    <header class="container">
+        <nav class="site-nav" aria-label="Main">
+            <a href="index.html" class="brand">Axel Lindberg</a>
+            <ul class="pill-nav">
+                <li><a href="#projects" class="is-active">Projects</a></li>
                 <li><a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <div class="nav-social">
-                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary" aria-label="Email me">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Contact</span>
-                </a>
-            </div>
         </nav>
     </header>
 
-    <main>
-        <!--SECTION 1: Hero-->
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="text">
-                    <div class="eyebrow">Full-Stack Developer · M.Sc. Student at KTH</div>
-
-                    <h1>Hi, I'm <span>Axel</span></h1>
-
-                    <p class="lead">
-                        I'm a Full-Stack Developer building practical AI and ML solutions for real-world problems.
-                        Currently pursuing an M.Sc. in Computer Science and Engineering at KTH Royal Institute of Technology.
-                    </p>
-
-                    <div class="location">
-                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                        <span>Stockholm, Sweden</span>
-                    </div>
-
-                    <div class="actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View my projects</span>
-                            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-                        </a>
-
-                        <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-                            <span>Resume</span>
-                        </a>
-                    </div>
-                </div>
+    <main class="container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-text">
+                <img class="headshot" src="images/hero-headshot.webp" alt="Portrait of Axel Lindberg" width="76" height="76">
+                <h1 id="hero-title">Hi, I'm Axel.<br><span class="muted">I build practical AI tools.</span></h1>
+                <p class="hero-sub">Full-stack developer and Computer Science student at KTH, Stockholm.</p>
+            </div>
+            <div class="hero-actions">
+                <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Resume</a>
+                <a href="mailto:axelahus@gmail.com" class="btn btn-secondary">Get in touch</a>
             </div>
         </section>
 
-        <!--SECTION 2: Skills-->
-        <section id="skills" class="section section-alt skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="eyebrow">~/skills</div>
-                    <h2>What I work with</h2>
-                    <p>Languages, frameworks and tools I've used across my projects.</p>
-                </div>
-
-                <div class="marquee">
-                    <ul class="cells">
-                        <li class="cell">
-                            <span>Python</span>
-                        </li>
-                        <li class="cell">
-                            <span>OpenAI</span>
-                        </li>
-                        <li class="cell">
-                            <span>Git</span>
-                        </li>
-                        <li class="cell">
-                            <span>Java</span>
-                        </li>
-                        <li class="cell">
-                            <span>C</span>
-                        </li>
-                        <li class="cell">
-                            <span>PostgreSQL</span>
-                        </li>
-                        <li class="cell">
-                            <span>HTML</span>
-                        </li>
-                        <li class="cell">
-                            <span>CSS</span>
-                        </li>
-                        <li class="cell">
-                            <span>JavaScript</span>
-                        </li>
-                        <li class="cell">
-                            <span>C#</span>
-                        </li>
-                        <li class="cell">
-                            <span>Docker</span>
-                        </li>
-                        <li class="cell">
-                            <span>FastAPI</span>
-                        </li>
-                        <li class="cell">
-                            <span>Unity</span>
-                        </li>
-                        <li class="cell">
-                            <span>Claude Code</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-groups">
-                    <div class="skill-group">
-                        <h3><i class="fa-solid fa-code" aria-hidden="true"></i>Languages</h3>
-                        <ul class="chips">
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>C</li>
-                            <li>C#</li>
-                            <li>JavaScript</li>
-                            <li>SQL</li>
-                            <li>HTML &amp; CSS</li>
-                            <li>RISC-V Assembly</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Frameworks &amp; Tools</h3>
-                        <ul class="chips">
-                            <li>FastAPI</li>
-                            <li>PostgreSQL</li>
-                            <li>Docker</li>
-                            <li>Git</li>
-                            <li>Unity</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>AI &amp; Ways of Working</h3>
-                        <ul class="chips">
-                            <li>OpenAI API</li>
-                            <li>Claude Code</li>
-                            <li>Agile / Scrum</li>
-                        </ul>
-                    </div>
-                </div>
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="section-head">
+                <h2 id="projects-title">Projects</h2>
+                <span class="count" data-project-count>4 projects</span>
             </div>
-        </section>
 
-        <!--SECTION 3: Projects-->
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="eyebrow">~/work</div>
-                    <h2>Featured projects</h2>
-                    <p>A selection of things I've built, from AI-powered web apps to VR simulations and embedded games.</p>
-                </div>
-
-                <div class="projects-grid">
-                    <a href="projects/tape31.html" class="project-card featured">
-                        <img src="images/tape31.webp" alt="Tape 31 title card over a flashlight beam on a VHS camcorder feed">
-
-                        <div class="overlay"></div>
-
-                        <div class="card-tag award">
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <span>Latest project</span>
+            <div class="project-grid">
+                <a href="projects/tape31.html" class="card">
+                    <div class="card-media">
+                        <img src="images/tape31.webp" alt="Tape 31 title card over a flashlight beam on a VHS camcorder feed" width="1280" height="800">
+                    </div>
+                    <div class="card-body">
+                        <div class="label-row">
+                            <span class="label">Game jam · 5 days</span>
+                            <span class="badge">Latest</span>
                         </div>
-
-                        <div class="project-info">
-                            <h3>Tape 31</h3>
-                            <p>Horror game made in 5 days for a game jam.</p>
-
-                            <ul class="tech-stack">
+                        <h3>Tape 31</h3>
+                        <p class="card-desc">Winner, Meta Game Jam.</p>
+                        <div class="card-foot">
+                            <ul class="tags" aria-label="Technologies">
                                 <li>Unity</li>
                                 <li>C#</li>
-                                <li>Claude Code</li>
-                                <li>Game Design</li>
+                                <li>Game design</li>
                             </ul>
-
-                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="arrow-btn" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                            </span>
                         </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="projects/ai_calorie_tracker.html" class="project-card">
-                        <img src="images/ai-calorie-tracker.webp" alt="Screenshot of the AI Calorie Tracker">
-
-                        <div class="overlay"></div>
-
-                        <div class="project-info">
-                            <h3>AI Calorie Tracker</h3>
-                            <p>Personal AI assistant for nutrition tracking.</p>
-
-                            <ul class="tech-stack">
+                <a href="projects/ai_calorie_tracker.html" class="card">
+                    <div class="card-media">
+                        <img src="images/ai-calorie-tracker.webp" alt="The AI Calorie Tracker showing a day's meal log with calorie and macro totals" width="1280" height="800">
+                    </div>
+                    <div class="card-body">
+                        <div class="label-row">
+                            <span class="label">Personal project</span>
+                        </div>
+                        <h3>AI Calorie Tracker</h3>
+                        <p class="card-desc">A personal AI assistant for nutrition tracking.</p>
+                        <div class="card-foot">
+                            <ul class="tags" aria-label="Technologies">
                                 <li>Python</li>
                                 <li>FastAPI</li>
                                 <li>PostgreSQL</li>
                                 <li>OpenAI API</li>
                             </ul>
-
-                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="arrow-btn" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                            </span>
                         </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="projects/metroped.html" class="project-card">
-                        <img src="images/metroped.webp" alt="Screenshot of the MetroPed VR metro station">
-
-                        <div class="overlay"></div>
-
-                        <div class="project-info">
-                            <h3>MetroPed</h3>
-                            <p>Improving realism in a metro VR simulation.</p>
-
-                            <ul class="tech-stack">
+                <a href="projects/metroped.html" class="card">
+                    <div class="card-media">
+                        <img src="images/metroped.webp" alt="A Stockholm metro station platform rendered in the MetroPed VR simulation" width="1280" height="800" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="label-row">
+                            <span class="label">Team project · VR</span>
+                        </div>
+                        <h3>MetroPed</h3>
+                        <p class="card-desc">Improving realism in a metro VR simulation.</p>
+                        <div class="card-foot">
+                            <ul class="tags" aria-label="Technologies">
                                 <li>C#</li>
                                 <li>Unity</li>
                                 <li>Scrum</li>
-                                <li>Agile</li>
                             </ul>
-
-                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="arrow-btn" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                            </span>
                         </div>
-                    </a>
+                    </div>
+                </a>
 
-                    <a href="projects/bomberman.html" class="project-card">
-                        <img src="images/bomberman_image1.webp" alt="Bomberman running on the DE10-Lite board">
-
-                        <div class="overlay"></div>
-
-                        <div class="project-info">
-                            <h3>Bomberman</h3>
-                            <p>Bomberman replica for a DE10-Lite board.</p>
-
-                            <ul class="tech-stack">
+                <a href="projects/bomberman.html" class="card">
+                    <div class="card-media">
+                        <img src="images/bomberman_image1.webp" alt="Bomberman running on the DE10-Lite board" width="1280" height="800" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="label-row">
+                            <span class="label">Embedded systems</span>
+                        </div>
+                        <h3>Bomberman</h3>
+                        <p class="card-desc">Best Project, IS1500 at KTH.</p>
+                        <div class="card-foot">
+                            <ul class="tags" aria-label="Technologies">
                                 <li>C</li>
                                 <li>RISC-V</li>
                             </ul>
-
-                            <span class="card-cta">View project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                            <span class="arrow-btn" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                            </span>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </section>
 
-        <!-- SECTION 4: Certificates
-        <section id="certificates" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="eyebrow">Certificates</div>
-                    <h2>Certificates</h2>
-                </div>
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="contact-text">
+                <h2 id="contact-title">Get in touch</h2>
+                <a href="mailto:axelahus@gmail.com" class="contact-email">axelahus@gmail.com</a>
             </div>
-        </section> -->
+            <div class="contact-links">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub</a>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">LinkedIn</a>
+                <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-small">Resume</a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container footer-cta">
-            <h2>Let's work together</h2>
-            <p>Have a role, project or question in mind? I'd love to hear from you.</p>
-            <div class="actions">
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Get in touch</span>
-                </a>
-                <a href="resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-                    <span>Resume</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <span>&copy; 2026 Axel Lindberg</span>
-                <div class="footer-links">
-                    <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:axelahus@gmail.com" class="icon-link" aria-label="Email">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="container">
+        <div class="site-footer">
+            <span>&copy; 2026 Axel Lindberg</span>
+            <span>Stockholm, Sweden</span>
         </div>
     </footer>
 
     <script>
-    // Duplicate the skills list so the marquee can loop seamlessly
-    document.querySelectorAll('.marquee').forEach(marquee => {
-        const list = marquee.querySelector('.cells');
-        const clone = list.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        const viewport = document.createElement('div');
-        viewport.className = 'marquee-viewport';
-        const track = document.createElement('div');
-        track.className = 'marquee-track';
-        list.replaceWith(viewport);
-        track.append(list, clone);
-        viewport.append(track);
-        marquee.classList.add('is-animated');
-    });
-
-    // Highlight the nav link of the section currently in view
-    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
-            });
-        });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+    // Keep the project count in sync with the number of cards
+    (function () {
+        var n = document.querySelectorAll('.project-grid .card').length;
+        var el = document.querySelector('[data-project-count]');
+        if (el) el.textContent = n + (n === 1 ? ' project' : ' projects');
+    })();
     </script>
 </body>
 </html>
