@@ -23,243 +23,168 @@
     <meta property="og:url" content="https://axel-lindberg.github.io/Portfolio/projects/ai_calorie_tracker.html">
     <meta property="og:image" content="https://axel-lindberg.github.io/Portfolio/images/ai-calorie-tracker.webp">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#000000">
 
     <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="projects.css">
 </head>
-<body class="project-page">
-    <!-- HEADER -->
-    <header class="site-header">
-        <nav class="container" aria-label="Main">
-            <a href="../index.html" class="brand">Axel Lindberg<span>.</span></a>
-
-            <ul class="nav-links">
-                <li><a href="../index.html#skills">Skills</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
+<body>
+    <header class="container">
+        <nav class="site-nav" aria-label="Main">
+            <a href="../index.html#projects" class="back-link">
+                <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
+                <span>All projects</span>
+            </a>
+            <ul class="pill-nav">
+                <li><a href="../index.html#projects" class="is-active">Projects</a></li>
                 <li><a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <div class="nav-social">
-                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary" aria-label="Email me">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Contact</span>
-                </a>
-            </div>
         </nav>
     </header>
 
     <main class="container">
-        <a href="../index.html#projects" class="back-link">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            <span>Back to projects</span>
-        </a>
-
-        <!-- HERO -->
-        <section class="project-hero">
-            <div class="eyebrow">Personal Project</div>
+        <header class="project-header">
+            <div class="label-row start">
+                <span class="label">Personal project</span>
+            </div>
             <h1>AI Calorie Tracker</h1>
-            <p class="tagline">
+            <p class="project-intro">
                 An AI-powered nutrition tracker that turns natural-language meal descriptions
                 into accurate calorie and macro data from the USDA FoodData Central database.
             </p>
-
-            <ul class="tech-stack">
-                <li>Python</li>
-                <li>FastAPI</li>
-                <li>PostgreSQL</li>
-                <li>OpenAI API</li>
-                <li>Docker</li>
-                <li>JavaScript</li>
-            </ul>
-
-            <div class="project-actions">
-                <a href="https://github.com/axel-lindberg/AI-Calorie-Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    <span>View on GitHub</span>
-                </a>
-            </div>
-
-            <div class="meta">
-                <div>
-                    Role
-                    <span>Full-Stack Developer</span>
-                </div>
-                <div>
-                    Team
-                    <span>Solo</span>
-                </div>
-                <div>
-                    Timeline
-                    <span>Apr 2026 – Present</span>
+            <div class="header-row">
+                <ul class="tags tags-lg" aria-label="Technologies">
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>PostgreSQL</li>
+                    <li>OpenAI API</li>
+                    <li>Docker</li>
+                    <li>JavaScript</li>
+                </ul>
+                <div class="header-actions">
+                    <a href="https://github.com/axel-lindberg/AI-Calorie-Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span>View on GitHub</span>
+                        <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
+                    </a>
                 </div>
             </div>
+        </header>
 
-            <div class="cover">
-                <video controls muted playsinline preload="metadata" poster="../images/ai-calorie-tracker.webp">
-                    <source src="../videos/AI-Calorie-Tracker-Demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <dl class="facts">
+            <div><dt>Role</dt><dd>Full-stack developer</dd></div>
+            <div><dt>Team</dt><dd>Solo</dd></div>
+            <div><dt>Timeline</dt><dd>Apr 2026 – Present</dd></div>
+        </dl>
+
+        <figure class="media-frame">
+            <video controls muted playsinline preload="metadata" poster="../images/ai-calorie-tracker.webp">
+                <source src="../videos/AI-Calorie-Tracker-Demo_720.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption class="media-caption">Demo</figcaption>
+        </figure>
+
+        <section class="split" aria-labelledby="overview-title">
+            <h2 id="overview-title">Overview</h2>
+            <div class="split-body">
+                <p class="lead">Logging food is tedious. Here you describe a meal in plain language — “two eggs and a slice of toast” — and the system takes care of the rest.</p>
+                <p class="body-text">AI Calorie Tracker is a full-stack nutrition tracking system. Instead of searching databases and entering portions by hand, meals are typed or dictated. They are stored in PostgreSQL, and the frontend shows the day's log together with total calories and macros.</p>
             </div>
         </section>
 
-        <!-- CONTENT -->
-        <div class="project-content">
-            <section id="overview">
-                <h2>Overview</h2>
-
-                <div class="highlights">
-                    <div class="highlight">
-                        <i class="fa-solid fa-microphone" aria-hidden="true"></i>
-                        <h3>Type or talk</h3>
-                        <p>Log meals in plain language, typed or dictated by voice.</p>
-                    </div>
-                    <div class="highlight">
-                        <i class="fa-solid fa-database" aria-hidden="true"></i>
-                        <h3>Grounded data</h3>
-                        <p>Nutrition values come from USDA FoodData Central, not model guesses.</p>
-                    </div>
-                    <div class="highlight">
-                        <i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i>
-                        <h3>Tested core logic</h3>
-                        <p>Unit tests cover the core nutrition calculations.</p>
-                    </div>
-                </div>
-
-                <p>
-                    AI Calorie Tracker is a full-stack nutrition tracking system that removes the tedious part of logging food.
-                    Instead of searching databases and entering portions by hand, meals are described in plain language,
-                    such as "two eggs and a slice of toast", and the system takes care of the rest.
-                </p>
-
-                <p>Each description runs through a five-step pipeline:</p>
-
-                <ol class="pipeline">
-                    <li>
-                        <strong>Describe</strong>
-                        <span>Meal typed or spoken</span>
-                    </li>
-                    <li>
-                        <strong>Parse</strong>
-                        <span>Food items, quantities and units</span>
-                    </li>
-                    <li>
-                        <strong>Match</strong>
-                        <span>Against USDA FoodData Central</span>
-                    </li>
-                    <li>
-                        <strong>Convert</strong>
-                        <span>Portions to grams</span>
-                    </li>
-                    <li>
-                        <strong>Scale</strong>
-                        <span>Nutrients to the portion</span>
-                    </li>
-                </ol>
-
-                <p>
-                    Meals are stored in PostgreSQL, and the frontend shows the day's log together with total calories and macros.
-                </p>
-            </section>
-
-            <section id="my-role">
-                <h2>My role</h2>
-
-                <div class="role-grid">
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-brain" aria-hidden="true"></i>AI Parsing &amp; Food Matching</h3>
-                        <ul>
-                            <li>Used the <strong>OpenAI API with Pydantic structured outputs</strong> to split free text into food items, quantities and units</li>
-                            <li>Pre-filtered USDA search results with <strong>RapidFuzz</strong> before an LLM picks the matching food, or rejects them all</li>
-                            <li>Kept nutrition data <strong>grounded in a trusted source</strong> rather than model guesses</li>
-                        </ul>
-                    </div>
-
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-calculator" aria-hidden="true"></i>Nutrition Calculation</h3>
-                        <ul>
-                            <li>Weight units converted directly, volume units through an <strong>estimated density</strong></li>
-                            <li>Falls back to an <strong>LLM estimate</strong> for anything else</li>
-                            <li>Scales per-100 g nutrient values to the actual portion, with the core logic covered by <strong>unit tests</strong></li>
-                        </ul>
-                    </div>
-
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-server" aria-hidden="true"></i>Backend &amp; Database</h3>
-                        <ul>
-                            <li>Designed a <strong>REST API in FastAPI</strong> for logging and deleting meals</li>
-                            <li>Endpoints for the day's log and totals</li>
-                            <li>Backed by a <strong>PostgreSQL</strong> database running in <strong>Docker</strong></li>
-                        </ul>
-                    </div>
-
-                    <div class="role-card">
-                        <h3><i class="fa-solid fa-display" aria-hidden="true"></i>Frontend</h3>
-                        <ul>
-                            <li>Lightweight frontend in <strong>vanilla JavaScript and Vite</strong></li>
-                            <li><strong>Voice input</strong> through the browser's Web Speech API, so meals can be dictated instead of typed</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="next-project">
-            <a href="metroped.html">
-                <span>
-                    <span class="label">Next project</span>
-                    <span class="title">MetroPed</span>
+        <section class="features" aria-label="Highlights">
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
                 </span>
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <h3>Type or talk</h3>
+                <p>Log meals in plain language, typed or dictated by voice.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg>
+                </span>
+                <h3>Grounded data</h3>
+                <p>Nutrition values come from USDA FoodData Central, not model guesses.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon" aria-hidden="true">
+                    <svg class="icon-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>
+                </span>
+                <h3>Tested core logic</h3>
+                <p>Unit tests cover the core nutrition calculations.</p>
+            </article>
+        </section>
+
+        <section class="split" aria-labelledby="how-title">
+            <h2 id="how-title">How it works</h2>
+            <ol class="steps">
+                <li><strong>Describe</strong><span>The meal is typed or spoken.</span></li>
+                <li><strong>Parse</strong><span>Food items, quantities and units are extracted.</span></li>
+                <li><strong>Match</strong><span>Each item is matched against USDA FoodData Central.</span></li>
+                <li><strong>Convert</strong><span>Portions are converted to grams.</span></li>
+                <li><strong>Scale</strong><span>Nutrients are scaled to the portion.</span></li>
+            </ol>
+        </section>
+
+        <section class="split" aria-labelledby="role-title">
+            <h2 id="role-title">My role</h2>
+            <div class="stack">
+                <div>
+                    <h3>AI parsing &amp; food matching</h3>
+                    <p>Used the OpenAI API with Pydantic structured outputs to split free text into food items, quantities and units. USDA search results are pre-filtered with RapidFuzz before an LLM picks the matching food, or rejects them all, so nutrition data stays grounded in a trusted source rather than model guesses.</p>
+                </div>
+                <div>
+                    <h3>Nutrition calculation</h3>
+                    <p>Weight units are converted directly and volume units through an estimated density, with an LLM estimate as the fallback for anything else. Per-100 g nutrient values are then scaled to the actual portion, and the core logic is covered by unit tests.</p>
+                </div>
+                <div>
+                    <h3>Backend &amp; database</h3>
+                    <p>Designed a REST API in FastAPI for logging and deleting meals, with endpoints for the day's log and totals, backed by a PostgreSQL database running in Docker.</p>
+                </div>
+                <div>
+                    <h3>Frontend</h3>
+                    <p>Built a lightweight frontend in vanilla JavaScript and Vite, with voice input through the browser's Web Speech API so meals can be dictated instead of typed.</p>
+                </div>
+            </div>
+        </section>
+
+        <nav class="next" aria-label="Next project">
+            <a href="metroped.html" class="next-card">
+                <span class="next-thumb"><img src="../images/metroped.webp" alt="" width="1280" height="800" loading="lazy"></span>
+                <span class="next-text">
+                    <span class="label">Next project</span>
+                    <span class="next-title">MetroPed</span>
+                </span>
+                <span class="next-arrow" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                </span>
             </a>
-        </div>
+        </nav>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="contact-text">
+                <h2 id="contact-title">Get in touch</h2>
+                <a href="mailto:axelahus@gmail.com" class="contact-email">axelahus@gmail.com</a>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub</a>
+                <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="btn btn-small">LinkedIn</a>
+                <a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-small">Resume</a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container footer-cta">
-            <h2>Let's work together</h2>
-            <p>Have a role, project or question in mind? I'd love to hear from you.</p>
-            <div class="actions">
-                <a href="mailto:axelahus@gmail.com" class="btn btn-primary">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    <span>Get in touch</span>
-                </a>
-                <a href="../resume/Axel_Lindberg_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-                    <span>Resume</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <span>&copy; 2026 Axel Lindberg</span>
-                <div class="footer-links">
-                    <a href="https://github.com/axel-lindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/axellindberg" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:axelahus@gmail.com" class="icon-link" aria-label="Email">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="container">
+        <div class="site-footer">
+            <span>&copy; 2026 Axel Lindberg</span>
+            <span>Stockholm, Sweden</span>
         </div>
     </footer>
 </body>
